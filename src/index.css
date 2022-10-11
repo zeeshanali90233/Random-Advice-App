@@ -1,0 +1,56 @@
+.App{
+    /* text-align: center; */
+    background-image: url(./Assets/Images/Street-Traffic-img-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.advice-wrapper{
+    background-color: rgba(1, 1, 1, 0.2);
+    height: 100vh;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.advice-content{
+    background-color: rgb(243, 240, 240,0.7);
+    padding: 10px;
+    min-width: 50vw;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.next-advice-btn button{
+    border: 1px solid rgba(1, 1, 1, 0.5);
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    /* padding: 0; */
+    border-radius: 10px;
+}
+
+
+.next-advice-btn button:hover{
+    background-color:rgb(243, 240, 240,0.7);
+    animation: Waving 0.4s 0.1s 1;
+     }
+
+@keyframes Waving{
+    0%{
+        transform: rotateZ(10deg);
+    }
+    50%{
+        transform: rotateZ(-10deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+.next-advice-btn button:focus{
+    outline: none;
+}
